@@ -1,0 +1,128 @@
+:root {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  padding: 5px;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2,
+h3,
+h4,
+h5,
+p,
+label {
+  color: #242424;
+}
+
+a {
+  font-weight: 500;
+  color: #0866ff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #0866ff;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+h1 {
+  color: #0866ff;
+  font-size: 3.2em;
+  width: 100%;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: white;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #0866ff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #0866ff;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #0866ff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0 0 20px 0;
+}
+.postCard {
+  border-top: solid #0866ff;
+  border-bottom: solid #0866ff;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  padding: 5px 5px 20px 0;
+}
+
+#postbutton,
+#commentbutton {
+  border-radius: 10px;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #0866ff;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+#postbutton:hover,
+#commentbutton:hover {
+  background-color: #034dc4;
+}
